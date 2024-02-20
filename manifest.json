@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3, 
+    "name": "Anuj Salesforce UI Refresh",
+    "version": "1.0.0",
+    "description": "Extension to receive messages from a WebSocket server to refresh the salesforce UI",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "tabs",
+        "storage" 
+    ],
+    "action": { 
+        "default_popup": "popup.html"
+    }
+}
