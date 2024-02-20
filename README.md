@@ -31,6 +31,14 @@ This is a Chrome browser extension that works alongside the [WebSocket File Trac
 3. When you save changes in the project files, the server detects these changes, and the extension refreshes the relevant tabs as per hostname.
 4. You can toggle the extension's active state by clicking on the button.
 
+## Salesforce Local Development Setup
+
+Follow these steps to use this tool for salesforce local development:
+
+1. Enable Debug Mode and user in Salesforce. Please follow these links. [Link1](https://developer.salesforce.com/docs/platform/lwc/guide/debug-mode-enable.html) and [Link2](https://developer.salesforce.com/docs/platform/lwc/guide/debug-debug-mode.html).
+2. Disable the secure and persistent browser caching setting in a sandbox or Developer Edition org to see the effect of any code changes without emptying the cache [Link](https://developer.salesforce.com/docs/platform/lwc/guide/debug-disable-caching.html).
+3. Enable deploy on save. Whenever you save a local source file, you can enable immediate deployment of the changes to your default org. [Link](https://developer.salesforce.com/tools/vscode/en/deploy-changes/deploy-on-save)
+
 ## Configuration
 
 The current version of the extension automatically connects to the WebSocket server at `ws://localhost:9995`. To change this or other configurations:
