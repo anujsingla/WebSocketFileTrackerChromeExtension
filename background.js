@@ -24,7 +24,7 @@ function connectWebSocket() {
             if (!tab.url || !message.host) {
               return;
             }
-            // Safely attempt to create URL objects
+            // Safely attempt to create URL object
             const tabUrl = new URL(tab.url);
             const messageUrl = new URL(message.host);
 
